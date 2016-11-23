@@ -1,0 +1,34 @@
+contactos:
+    path:     /
+    defaults: { _controller: "ClientesBundle:Contactos:index" }
+
+contactos_show:
+    path:     /{id}/show
+    defaults: { _controller: "ClientesBundle:Contactos:show" }
+
+contactos_new:
+    path:     /new
+    defaults: { _controller: "ClientesBundle:Contactos:new" }
+
+contactos_create:
+    path:     /create
+    defaults: { _controller: "ClientesBundle:Contactos:create" }
+    methods:  POST
+
+contactos_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "ClientesBundle:Contactos:edit" }
+
+contactos_update:
+    path:     /{id}/update
+    defaults: { _controller: "ClientesBundle:Contactos:update" }
+    methods:  [POST, PUT]
+
+contactos_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "ClientesBundle:Contactos:delete" }
+    methods:  [POST, DELETE]
+
+pass:
+    path: /{id}/pass
+    defaults: { _controller: "ClientesBundle:Contactos:nuevoPass" }

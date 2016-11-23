@@ -1,0 +1,142 @@
+<?php
+
+namespace Mesa\ClientesBundle\Entity;
+
+/**
+ * Contactos
+ */
+class Contactos
+{
+    /**
+     * @var integer
+     */
+    private $id;
+
+    /**
+     * @var string
+     */
+    private $nombre;
+
+    /**
+     * @var string
+     */
+    private $apePat;
+
+    /**
+     * @var string
+     */
+    private $apeMat;
+
+    /**
+     * @var string
+     */
+    private $contrasena;
+
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set nombre
+     *
+     * @param string $nombre
+     *
+     * @return Contactos
+     */
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    /**
+     * Get nombre
+     *
+     * @return string
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    /**
+     * Set apePat
+     *
+     * @param string $apePat
+     *
+     * @return Contactos
+     */
+    public function setApePat($apePat)
+    {
+        $this->apePat = $apePat;
+
+        return $this;
+    }
+
+    /**
+     * Get apePat
+     *
+     * @return string
+     */
+    public function getApePat()
+    {
+        return $this->apePat;
+    }
+
+    /**
+     * Set apeMat
+     *
+     * @param string $apeMat
+     *
+     * @return Contactos
+     */
+    public function setApeMat($apeMat)
+    {
+        $this->apeMat = $apeMat;
+
+        return $this;
+    }
+
+    /**
+     * Get apeMat
+     *
+     * @return string
+     */
+    public function getApeMat()
+    {
+        return $this->apeMat;
+    }
+
+    /**
+     * Set contrasena
+     *
+     * @param string $contrasena
+     *
+     * @return Contactos
+     */
+    public function setContrasena($contrasena)
+    {
+        $this->contrasena = $contrasena;
+
+        return $this;
+    }
+
+    /**
+     * Get contrasena
+     *
+     * @return string
+     */
+    public function getContrasena()
+    {
+        return $this->contrasena;
+    }
+}
+

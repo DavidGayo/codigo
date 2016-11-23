@@ -1,0 +1,53 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+
+    <div class="main">
+        <div class="">
+            <div class="main__cont">
+                <div class="main-heading">
+                    <ol class="breadcrumb">
+                      <li><a href="{{ path('compania') }}">Compañia</a></li>
+                        <li class="active">Vista Compañia</li>
+                    </ol>
+                </div>
+                <div class="container-fluid half-padding">
+                    <div class="pages pages_dashboard">
+
+                        <div class="row">
+
+                      <div class="users-preview datalist-preview">
+                        <div class="users-preview__cont">
+                          <div title="Name" class="users-preview__name">{{ entity.nombre }}</div>
+                          <div class="users-preview__data">
+                            
+                          <div class="col-sm-6">
+                          <div class="users-preview__info">
+                              <div class="users-preview__edit">
+                                <div class="btn-group btn-group-sm">
+                                  <button type="button" class="btn btn-danger">Acciones</button>
+                                  <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-danger dropdown-toggle"><span class="caret"></span></button>
+                                  <ul class="dropdown-menu">
+                                    <a type="submit" href="{{ path('compania_edit', { 'id': entity.id }) }}" class="btn btn-info">Editar</a>
+                                    <li class="lspadding">{{ form(delete_form) }}</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                   
+                            
+                          </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

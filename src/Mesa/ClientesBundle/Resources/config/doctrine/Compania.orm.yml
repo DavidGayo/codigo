@@ -1,0 +1,19 @@
+Mesa\ClientesBundle\Entity\Compania:
+    type: entity
+    table: null
+    repositoryClass: Mesa\ClientesBundle\Entity\CompaniaRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: '100'
+    oneToMany:
+        contacto:
+             targetEntity: Mesa\ClientesBundle\Entity\Contactos
+             mappedBy: Compania
+    lifecycleCallbacks: {  }

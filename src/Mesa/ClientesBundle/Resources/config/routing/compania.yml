@@ -1,0 +1,30 @@
+compania:
+    path:     /
+    defaults: { _controller: "ClientesBundle:Compania:index" }
+
+compania_show:
+    path:     /{id}/show
+    defaults: { _controller: "ClientesBundle:Compania:show" }
+
+compania_new:
+    path:     /new
+    defaults: { _controller: "ClientesBundle:Compania:new" }
+
+compania_create:
+    path:     /create
+    defaults: { _controller: "ClientesBundle:Compania:create" }
+    methods:  POST
+
+compania_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "ClientesBundle:Compania:edit" }
+
+compania_update:
+    path:     /{id}/update
+    defaults: { _controller: "ClientesBundle:Compania:update" }
+    methods:  [POST, PUT]
+
+compania_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "ClientesBundle:Compania:delete" }
+    methods:  [POST, DELETE]

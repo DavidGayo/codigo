@@ -1,0 +1,8 @@
+clientes:
+    resource: "@ClientesBundle/Resources/config/routing.yml"
+    prefix:   /
+
+usuario:
+    resource: "@UsuarioBundle/Resources/config/routing.yml"
+    prefix:   /
+
